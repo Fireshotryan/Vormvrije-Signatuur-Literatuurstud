@@ -177,6 +177,12 @@ tr:nth-child(even) td {
     background-color: #77aaff;
 }
 
+/* Add styles for the active page button */
+.page-navigation button.active {
+    background-color: #007bff; /* Change to your preferred active color */
+    color: white;
+}
+
 /* Add some hover effects and transitions for better UI experience */
 button, a {
     transition: background-color 0.3s ease, color 0.3s ease;

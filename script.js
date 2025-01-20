@@ -17,7 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         pages.forEach((page, index) => {
             page.classList.toggle('active', index === pageIndex);
         });
+        navButtons.forEach((button, index) => {
+            button.classList.toggle('active', index === pageIndex);
+        });
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top when changing pages
+        localStorage.setItem('lastPage', pageIndex); // Save the current page index to localStorage
     }
 
     navButtons.forEach((button, index) => {
@@ -26,8 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Show the first page by default
-    showPage(0);
+    // Show the last visited page or the first page by default
+    const lastPage = localStorage.getItem('lastPage');
+    showPage(lastPage ? parseInt(lastPage) : 0);
 
     // Add any additional JavaScript code here to handle dynamic content or interactions
 });
