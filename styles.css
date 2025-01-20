@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+}
+
+#showcase {
+    min-height: 400px;
+    background: url('showcase.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+    background-blend-mode: darken; /* Blend the overlay with the background image */
+}
+
+#showcase h1 {
+    margin-top: 0;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #fff; /* Ensure text is white */
+}
+
+#showcase p {
+    font-size: 20px;
+    color: #fff; /* Ensure text is white */
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: #e4e4e4 1px solid;
+}
+
+#main-col {
+    float: left;
+    width: 100%;
+}
+
+#sidebar {
+    float: right;
+    width: 100%;
+    background: #e4e4e4;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#sidebar h3 {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    clear: both;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: none;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Styles for page navigation */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-navigation button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.page-navigation button:hover {
+    background-color: #77aaff;
+}
+
+/* Add some hover effects and transitions for better UI experience */
+button, a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #77aaff;
+    color: #fff;
+}
+
+/* Add some padding and margin to articles for better readability */
+article {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header li {
+        float: none;
+        display: block;
+        padding: 10px 0;
+    }
+
+    #main-col, #sidebar {
+        float: none;
+        width: 100%;
+    }
+}

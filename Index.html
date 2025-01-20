@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTM Business Webscraping Onderzoek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>RTM Business Webscraping Onderzoek</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Onderzoek naar Webscraping voor Real-time Prijsmatching</h1>
+            <p>Hoe kan RTM Business webscraping implementeren om real-time prijsmatching bij distributeurs te waarborgen?</p>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <div class="page active" id="page1">
+                <article id="main-col">
+                    <h2>Onderzoeksvraag</h2>
+                    <p>"Hoe kan RTM Business webscraping implementeren om real-time prijsmatching bij distributeurs te waarborgen, en daarmee factuurverschillen en financiële verliezen te voorkomen?"</p>
+                    
+                    <h2>Probleemstelling en Aanleiding</h2>
+                    <p>RTM Business ervaart structurele financiële verliezen door inconsistenties tussen de gefactureerde en werkelijke productprijzen bij distributeurs. Het ontbreken van een real-time prijscontrolemechanisme, zoals een webscraper, leidt tot inefficiënties en vergroot het risico op fouten. Het ontbreken van een geautomatiseerd systeem om deze prijsverschillen continu te monitoren is het gevolg van tijdsgebrek en beperkte middelen. De introductie van een webscraper zou deze discrepanties vroegtijdig kunnen detecteren, zodat facturen gecontroleerd en gecorrigeerd kunnen worden vóór betaling. Dit zou niet alleen de nauwkeurigheid van betalingen verbeteren, maar ook financiële verliezen reduceren.</p>
+                </article>
+            </div>
+
+            <div class="page" id="page2">
+                <article id="main-col">
+                    <h2>Contextanalyse: Interne en Externe Factoren</h2>
+                    <h3>Model 1: DESTEP-analyse</h3>
+                    <p>1. Demografisch</p>
+                    <p>Vraag: Welke distributeurs zijn strategisch belangrijk en welke producten vereisen de nauwkeurigste prijsbewaking?</p>
+                    <p>Antwoord: Uit analyse van de top-5 distributeurs blijkt dat producten zoals hardware (bijv. servers en pc's) en softwarelicenties het grootste aandeel in de omzet van RTM Business vertegenwoordigen. Deze producten ondergaan frequente prijswijzigingen, wat betekent dat real-time prijsbewaking noodzakelijk is. Distributeurs zoals HP, Dell, Lenovo, en Cisco hebben een enorme impact op de markt door hun aanwezigheid in IT-oplossingen en infrastructuur.</p>
+                    <p>Bron: <a href="https://www.idc.com/" target="_blank">Meer details over top IT-leveranciers en hun marktstrategieën zijn beschikbaar via IDC Market Data</a></p>
+                    
+                    <p>2. Economisch</p>
+                    <p>Vraag: Wat zijn de kostenbesparingen door webscraping in vergelijking met handmatige controles?</p>
+                    <p>Antwoord: Onderzoek toont aan dat bedrijven die webscraping toepassen, een vermindering van 30% in factuurverschillen ervaren. Dit kan leiden tot jaarlijkse besparingen van €100.000 op operationele kosten. Dit wordt bereikt doordat webscraping realtime gegevens verzamelt en prijsfouten eerder detecteert, waardoor correcties sneller kunnen worden doorgevoerd.</p>
+                    <p>Bron: <a href="https://www.ibm.com/topics/rpa" target="_blank">IBM Robotic Process Automation</a></p>
+                    
+                    <p>3. Technologisch</p>
+                    <p>Vraag: Is het technisch haalbaar om een webscraper te integreren?</p>
+                    <p>Antwoord: De huidige IT-infrastructuur van RTM Business ondersteunt API-integraties, waardoor de implementatie van webscrapingtools zoals Scrapy of Octoparse mogelijk is. Deze tools kunnen eenvoudig worden gekoppeld aan bestaande ERP-systemen en helpen bij het automatiseren van prijscontroleprocessen.</p>
+                    <p>Bron: <a href="https://www.octoparse.com/" target="_blank">Octoparse</a></p>
+                    <p>Bron: <a href="https://scrapy.org/" target="_blank">Scrapy Framework</a></p>
+                    
+                    <p>4. Sociaal</p>
+                    <p>Vraag: Hoe reageren distributeurs op prijsmonitoring?</p>
+                    <p>Antwoord: Transparantie in prijsmatching kan leiden tot sterkere en duurzamere relaties met distributeurs, aangezien het vertrouwen vergroot. Echter, sommige distributeurs kunnen prijsmonitoring als controlerend ervaren, wat kan leiden tot weerstand tegen het gebruik van dergelijke technologieën.</p>
+                    <p>Bron: <a href="https://www.42signals.com/blog/importance-of-price-monitoring-for-business/" target="_blank">42 Signals - Importance of Price Monitoring for Business</a></p>
+                    <p>Bron: <a href="https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Marketing%20and%20Sales/Our%20Insights/Pricing%20Distributors%20most%20powerful%20value%20creation%20lever/Pricing-Distributors-most-powerful-value-creation-lever.ashx" target="_blank">McKinsey & Company - Pricing as a Lever for Value Creation with Distributors</a></p>
+                    
+                    <p>5. Ecologisch</p>
+                    <p>Vraag: Zijn er ecologische voordelen aan het implementeren van webscraping?</p>
+                    <p>Antwoord: De implementatie van webscraping vermindert handmatige controles, wat leidt tot efficiënter energiegebruik en lagere CO2-uitstoot door IT-infrastructuren. Daarnaast zorgt de automatisering voor minder foutieve productretouren, wat transportemissies vermindert.</p>
+                    <p>Bron: <a href="https://www.suvit.io/post/automation-and-sustainability" target="_blank">How automation is increasing environmental sustainability</a></p>
+                    
+                    <p>6. Politiek-juridisch</p>
+                    <p>Vraag: Wat zijn de juridische risico’s verbonden aan webscraping?</p>
+                    <p>Antwoord: Webscraping is legaal zolang het voldoet aan de Algemene Verordening Gegevensbescherming (AVG) en de voorwaarden van de websites van distributeurs niet schendt. Het is essentieel om vooraf juridische toetsing uit te voeren om risico’s te minimaliseren, vooral met betrekking tot dataverzameling en privacy.</p>
+                    <p>Bron: <a href="https://gdpr-info.eu/" target="_blank">GDPR Compliance in Data Collection</a></p>
+                </article>
+            </div>
+
+            <div class="page" id="page3">
+                <article id="main-col">
+                    <h3>Model 2: SWOT-analyse</h3>
+                    <p>De interne sterktes, zwaktes, externe kansen en bedreigingen van RTM Business worden hier in kaart gebracht:</p>
+                    <p>Sterktes:</p>
+                    <ul>
+                        <li>Technische infrastructuur ondersteunt webscraping.</li>
+                        <li>Focus op automatisering verhoogt efficiëntie.</li>
+                    </ul>
+                    <p>Zwaktes:</p>
+                    <ul>
+                        <li>Gebrek aan interne expertise in webscraping.</li>
+                        <li>Beperkt budget en tijd voor implementatie.</li>
+                    </ul>
+                    <p>Kansen:</p>
+                    <ul>
+                        <li>Kostenbesparing en minder foutieve facturen.</li>
+                        <li>Concurrentievoordeel door efficiënt procesbeheer.</li>
+                    </ul>
+                    <p>Bedreigingen:</p>
+                    <ul>
+                        <li>Juridische onzekerheden omtrent compliance.</li>
+                        <li>Technologische obstakels zoals wijzigingen in distributieplatforms.</li>
+                    </ul>
+                    
+                    <h3>Confrontatiematrix</h3>
+                    <p>De DESTEP-factoren zijn gekoppeld aan de SWOT-analyse om de impact van deze factoren op de interne en externe situatie van RTM Business te beoordelen:</p>
+                    <table>
+                        <tr>
+                            <th>DESTEP-factoren</th>
+                            <th>Kansen</th>
+                            <th>Bedreigingen</th>
+                        </tr>
+                        <tr>
+                            <td>Kostenbesparing</td>
+                            <td>+2</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td>Efficiëntie</td>
+                            <td>+2</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td>Innovatievermogen</td>
+                            <td>+1</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <td>Klantgerichtheid</td>
+                            <td>+2</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <td>Beperkte interne capaciteit</td>
+                            <td>0</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <td>Technologische afhankelijkheid</td>
+                            <td>+1</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td>Beperkte juridische kennis</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Aanvullend: 5 Why-Methode</h3>
+                    <p>Met deze methode worden de kernoorzaken van het probleem in kaart gebracht:</p>
+                    <p>1. Waarom zijn facturen foutief?</p>
+                    <p>Actie: Webscraper ontwikkelen om prijsverschillen vroegtijdig te detecteren.</p>
+                    <p>2. Waarom kloppen prijzen niet?</p>
+                    <p>Actie: Real-time alertsystemen implementeren voor onmiddellijke prijsfeedback.</p>
+                    <p>3. Waarom wordt controle handmatig gedaan?</p>
+                    <p>Actie: Automatisering opnemen om tijd te besparen en fouten te verminderen.</p>
+                    <p>4. Waarom is er geen scraping-oplossing?</p>
+                    <p>Actie: Scrapy en Octoparse onderzoeken en implementeren.</p>
+                    <p>5. Waarom is implementatie vertraagd?</p>
+                    <p>Actie: Tijd en budget reserveren voor onderzoek en implementatie, inclusief juridische goedkeuring.</p>
+                </article>
+            </div>
+
+            <div class="page" id="page4">
+                <article id="main-col">
+                    <h2>Conclusie en Afgebakende Onderzoeksvraag</h2>
+                    <p>Afgebakende Onderzoeksvraag: "Welke juridische, technische en organisatorische stappen moet RTM Business nemen om webscraping succesvol te implementeren, en hoe kan een proof of concept helpen om financiële voordelen te kwantificeren en risico’s te minimaliseren?"</p>
+                    
+                    <h3>Conclusies:</h3>
+                    <p>1. Juridische en technische haalbaarheid:</p>
+                    <ul>
+                        <li>Juridische compliance (vooral met de AVG) vereist nadere analyse.</li>
+                        <li>De technische haalbaarheid van scrapingtools zoals Scrapy moet verder onderzocht worden, inclusief de integratie met bestaande systemen.</li>
+                    </ul>
+                    <p>2. Interne capaciteit en middelen:</p>
+                    <ul>
+                        <li>Training of het inhuren van externe expertise is essentieel om de implementatie te versnellen.</li>
+                        <li>De kosten-batenanalyse helpt bij het rechtvaardigen van de benodigde middelen.</li>
+                    </ul>
+                    
+                    <h3>Actiepunten:</h3>
+                    <ul>
+                        <li>Juridische toetsing: Analyseer AVG-compliance en mogelijke juridische risico’s.</li>
+                        <li>Proof of Concept: Ontwikkel een prototype met Octoparse of Scrapy en test de integratie met het ERP-systeem.</li>
+                        <li>Capaciteitsopbouw: Ontwikkel een trainingsplan of onderzoek outsourcing.</li>
+                    </ul>
+                    <p>Met deze aanpak kan RTM Business de voordelen van webscraping realiseren en tegelijkertijd de belangrijkste risico’s minimaliseren.</p>
+                </article>
+            </div>
+
+            <div class="page" id="page5">
+                <article id="main-col">
+                    <h2>Onderzoeksvraag</h2>
+                    <p>"Hoe kan RTM Business webscraping implementeren om real-time prijsmatching bij distributeurs te waarborgen, en daarmee factuurverschillen en financiële verliezen te voorkomen?"</p>
+                    
+                    <h2>Probleemstelling en Aanleiding</h2>
+                    <p>RTM Business ervaart structurele financiële verliezen door inconsistenties tussen de gefactureerde en werkelijke productprijzen bij distributeurs. Het ontbreken van een real-time prijscontrolemechanisme, zoals een webscraper, leidt tot inefficiënties en vergroot het risico op fouten. Het ontbreken van een geautomatiseerd systeem om deze prijsverschillen continu te monitoren is het gevolg van tijdsgebrek en beperkte middelen. De introductie van een webscraper zou deze discrepanties vroegtijdig kunnen detecteren, zodat facturen gecontroleerd en gecorrigeerd kunnen worden vóór betaling. Dit zou niet alleen de nauwkeurigheid van betalingen verbeteren, maar ook financiële verliezen reduceren.</p>
+                </article>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="page" id="page6">
+                <article id="main-col">
+                    <h2>Contextanalyse: Interne en Externe Factoren</h2>
+                    <h3>Model 1: DESTEP-analyse</h3>
+                    <p>1. Demografisch</p>
+                    <p>Vraag: Welke distributeurs zijn strategisch belangrijk en welke producten vereisen de nauwkeurigste prijsbewaking?</p>
+                    <p>Antwoord: Uit analyse van de top-5 distributeurs blijkt dat producten zoals hardware (bijv. servers en pc's) en softwarelicenties het grootste aandeel in de omzet van RTM Business vertegenwoordigen. Deze producten ondergaan frequente prijswijzigingen, wat betekent dat real-time prijsbewaking noodzakelijk is. Distributeurs zoals HP, Dell, Lenovo, en Cisco hebben een enorme impact op de markt door hun aanwezigheid in IT-oplossingen en infrastructuur.</p>
+                    <p>Bron: <a href="https://www.idc.com/" target="_blank">Meer details over top IT-leveranciers en hun marktstrategieën zijn beschikbaar via IDC Market Data</a></p>
+
+                    <p>2. Economisch</p>
+                    <p>Vraag: Wat zijn de kostenbesparingen door webscraping in vergelijking met handmatige controles?</p>
+                    <p>Antwoord: Onderzoek toont aan dat bedrijven die webscraping toepassen, een vermindering van 30% in factuurverschillen ervaren. Dit kan leiden tot jaarlijkse besparingen van €100.000 op operationele kosten. Dit wordt bereikt doordat webscraping realtime gegevens verzamelt en prijsfouten eerder detecteert, waardoor correcties sneller kunnen worden doorgevoerd.</p>
+                    <p>Bron: <a href="https://www.ibm.com/topics/rpa" target="_blank">IBM Robotic Process Automation</a></p>
+                </article>
+            </div>
+
+            <div class="page" id="page7">
+                <article id="main-col">
+                    <h2>Probleemstelling en Analyse</h2>
+                    <p>RTM Business kampt met structurele financiële verliezen door discrepanties tussen de gefactureerde en werkelijke productprijzen bij distributeurs. De kernproblemen zijn:</p>
+                    <ol>
+                        <li>Inefficiëntie door foutgevoelige manuele controleprocessen.</li>
+                        <li>Gebrek aan technische integratie voor realtime prijsbewaking.</li>
+                        <li>Onvoldoende interne expertise en middelen.</li>
+                    </ol>
+                    
+                    <h3>Doelstelling</h3>
+                    <p>Een oplossing implementeren die realtime prijsmatching mogelijk maakt en financiële verliezen minimaliseert.</p>
+
+                    <h3>Analyse van Factoren: Toegepaste Tools</h3>
+                    <p>Tools:</p>
+                    <ul>
+                        <li>Ishikawa-diagram: Gebruikt om de oorzaken en gevolgen van het probleem te identificeren.</li>
+                        <li>5 Why-methode: Toegepast om door te dringen tot de kernoorzaken van de inefficiënties.</li>
+                        <li>Confrontatiematrix en impactladder: Gebruikt om prioriteiten te stellen bij oorzaken en oplossingen.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Page 4 -->
+            <div class="page" id="page8">
+                <article id="main-col">
+                    <h3>Hoofdproblemen en Sub-factoren</h3>
+                    <p>1. Procesgerelateerd:</p>
+                    <ul>
+                        <li>Geen geautomatiseerd systeem voor prijscontrole.</li>
+                        <li>Inefficiënties door manuele controleprocessen.</li>
+                    </ul>
+                    <p>2. Technologie gerelateerd:</p>
+                    <ul>
+                        <li>Beperkte IT-integratie en afhankelijkheid van distributeurssystemen.</li>
+                    </ul>
+                    <p>3. Menselijk kapitaal:</p>
+                    <ul>
+                        <li>Gebrek aan interne expertise in webscraping en data-analyse.</li>
+                    </ul>
+                    <p>4. Juridisch:</p>
+                    <ul>
+                        <li>Onzekerheid over AVG-compliance en juridische beperkingen.</li>
+                    </ul>
+                    <p>5. Kosten:</p>
+                    <ul>
+                        <li>Financiële verliezen door inefficiënties en beperkte investeringsruimte.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- New content -->
+            <div class="page" id="page9">
+                <article id="main-col">
+                    <h3>Verbanden: Oorzaken en Gevolgen</h3>
+                    <p>Gebaseerd op de analyse van de factoren is de relatie tussen oorzaken en gevolgen als volgt:</p>
+                    <table>
+                        <tr>
+                            <th>Categorie</th>
+                            <th>Oorzaak</th>
+                            <th>Gevolg</th>
+                            <th>Impact</th>
+                        </tr>
+                        <tr>
+                            <td>Proces</td>
+                            <td>Geen geautomatiseerde controleprocessen</td>
+                            <td>Vertragingen en foutieve facturen</td>
+                            <td>Hoog</td>
+                        </tr>
+                        <tr>
+                            <td>Technologie</td>
+                            <td>Geen API-integratie</td>
+                            <td>Inconsistenties in prijsmatching</td>
+                            <td>Zeer hoog</td>
+                        </tr>
+                        <tr>
+                            <td>Menselijk kapitaal</td>
+                            <td>Onvoldoende expertise</td>
+                            <td>Trage implementatie van oplossingen</td>
+                            <td>Gemiddeld</td>
+                        </tr>
+                        <tr>
+                            <td>Juridisch</td>
+                            <td>AVG-risico</td>
+                            <td>Juridische boetes of conflicten</td>
+                            <td>Hoog</td>
+                        </tr>
+                        <tr>
+                            <td>Kosten</td>
+                            <td>Beperkte investeringsruimte</td>
+                            <td>Moeilijke implementatie van nieuwe technologieën</td>
+                            <td>Hoog</td>
+                        </tr>
+                    </table>
+
+                    <h3>Inzichtelijke Communicatie: Confrontatiematrix en Impactladder</h3>
+                    <h4>Confrontatiematrix</h4>
+                    <p>Hier evalueren we de impact van interne en externe factoren binnen de juiste schaal van kansen en bedreigingen.</p>
+                    <table>
+                        <tr>
+                            <th>Factoren</th>
+                            <th>Impact op efficiëntie</th>
+                            <th>Kansen</th>
+                            <th>Bedreigingen</th>
+                        </tr>
+                        <tr>
+                            <td>Sterktes</td>
+                            <td>Geavanceerde IT-structuur</td>
+                            <td>Innovatiepotentieel</td>
+                            <td>Juridische risico’s</td>
+                        </tr>
+                        <tr>
+                            <td>Zwaktes</td>
+                            <td>Beperkte interne capaciteit</td>
+                            <td>Capaciteitsopbouw</td>
+                            <td>Juridische risico’s</td>
+                        </tr>
+                    </table>
+
+                    <h4>Impactladder</h4>
+                    <p>De impactladder geeft de tijdsverloop en de samenhang van effecten weer. Hieronder worden de acties en tijdslijnen gepresenteerd, met de verwachte effecten en gevolgen:</p>
+                    <ol>
+                        <li><strong>Stap 1: Probleemidentificatie en basisanalyse (huidige situatie - 1 maand)</strong>
+                            <ul>
+                                <li>Actie: Analyseer de bestaande processen en technische infrastructuur.</li>
+                                <li>Effect: Vaststelling van inefficiënties in prijscontrole en juridische risico's (AVG).</li>
+                                <li>Gevolg: Inzicht in de belangrijkste tekortkomingen en risico’s.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stap 2: Korte termijn oplossing (1-3 maanden)</strong>
+                            <ul>
+                                <li>Actie: Implementatie van webscraping-tools (Octoparse, Scrapy) voor prijsmonitoring.</li>
+                                <li>Effect: Automatisering van gegevensverzameling leidt tot snellere prijsvergelijking en vermindert de kans op menselijke fouten.</li>
+                                <li>Gevolg: Snellere prijsmatching en afname van foutieve facturen.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stap 3: Middellange termijn oplossing (6-12 maanden)</strong>
+                            <ul>
+                                <li>Actie: Integratie van API’s met ERP-systemen om realtime prijsmatching te realiseren.</li>
+                                <li>Effect: API-integratie zorgt voor consistentie in prijzen en realtime updates.</li>
+                                <li>Gevolg: Inconsistenties in prijzen verminderen, wat leidt tot nauwkeurige facturen en operationele efficiëntie.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stap 4: Capaciteitsopbouw en juridische naleving (6-12 maanden)</strong>
+                            <ul>
+                                <li>Actie: Training van interne medewerkers en juridische experts voor AVG-compliance.</li>
+                                <li>Effect: Verhoogde interne expertise en bescherming tegen juridische risico's.</li>
+                                <li>Gevolg: Compliance wordt gegarandeerd, waardoor juridische risico's afnemen.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stap 5: Lange termijn optimalisatie en opschaling (1-2 jaar)</strong>
+                            <ul>
+                                <li>Actie: Implementatie van data gestuurde inzichten en opschaling naar andere distributiekanalen.</li>
+                                <li>Effect: Geoptimaliseerde processen en schaalvergroting naar meerdere kanalen.</li>
+                                <li>Gevolg: Verdere kostenbesparingen en operationele efficiëntie op lange termijn.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </article>
+            </div>
+
+            <!-- Page 5 -->
+            <div class="page" id="page10">
+                <article id="main-col">
+                    <h3>Actiepunten en Conclusies</h3>
+                    <p>1. Belangrijkste oorzaken:</p>
+                    <ul>
+                        <li>Gebrek aan automatisering en technische integratie.</li>
+                        <li>Beperkte juridische en technologische middelen.</li>
+                    </ul>
+                    <p>2. Belangrijkste gevolgen:</p>
+                    <ul>
+                        <li>Structurele financiële verliezen en inefficiëntie.</li>
+                    </ul>
+
+                    <h3>Aanbevolen acties:</h3>
+                    <ul>
+                        <li>Ontwikkel een proof of concept met tools zoals Octoparse en Scrapy.</li>
+                        <li>Prioriteer API-integratie met ERP-systemen.</li>
+                        <li>Training voor medewerkers over scraping technieken.</li>
+                        <li>Zorg voor AVG-compliance met juridische ondersteuning.</li>
+                        <li>Voer een kosten-batenanalyse uit en gebruik deze als onderbouwing voor investeringen.</li>
+                    </ul>
+                    <h3>Communicatie van resultaten:</h3>
+                    <p>De impactladder en aanbevelingen kunnen visueel gepresenteerd worden via interactieve dashboards, visuele tijdslijnen en infographics voor transparantie en effectiviteit bij belanghebbenden.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-navigation">
+        <button>Page 1</button>
+        <button>Page 2</button>
+        <button>Page 3</button>
+        <button>Page 4</button>
+        <button>Page 5</button>
+        <button>Page 6</button>
+        <button>Page 7</button>
+        <button>Page 8</button>
+        <button>Page 9</button>
+        <button>Page 10</button>
+    </div>
+
+    <footer>
+        <p>RTM Business Webscraping Onderzoek</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
